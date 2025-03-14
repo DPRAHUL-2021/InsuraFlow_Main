@@ -26,7 +26,7 @@ const Sidebar = () => {
   }, []);
 
   const menuItems = [
-    { name: "Dashboard", icon: Home, path: "/" },
+    { name: "Dashboard", icon: Home, path: "/dashboard" },
     { name: "Add a Claim", icon: FolderPlus, path: "/addclaim" },
     { name: "Claims Listing", icon: List, path: "/claimshistory" },
     { name: "Settings", icon: Settings, path: "/settings" },
