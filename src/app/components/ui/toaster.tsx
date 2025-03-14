@@ -1,6 +1,6 @@
 'use client';
 
-import { useToast } from '@/hooks/use-toast';
+// import { useToast } from '../../../hooks/use-toast';
 import {
   Toast,
   ToastClose,
@@ -8,7 +8,15 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from '@/components/ui/toast';
+} from '../../components/ui/toast';
+
+interface ToastType {
+  id: string;
+  title?: string;
+  description?: string;
+  action?: React.ReactNode;
+  [key: string]: any;
+}
 
 export function Toaster() {
   const { toasts } = useToast();
@@ -24,12 +32,15 @@ export function Toaster() {
                 <ToastDescription>{description}</ToastDescription>
               )}
             </div>
-            {action}
-            <ToastClose />
-          </Toast>
-        );
-      })}
+      {action}
+    </Toast>
+  );
+})}
       <ToastViewport />
     </ToastProvider>
   );
+}
+// function useToast(): { toasts: ToastType[]; } {
+function useToast(): { toasts: ToastType[]; } {
+  throw new Error('Function not implemented.');
 }

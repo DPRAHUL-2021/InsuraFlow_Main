@@ -99,7 +99,9 @@ const AddClaim = () => {
     <div className="flex h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
       <Sidebar />
       <div className="flex flex-col flex-1 ml-64">
-        <Header />
+        <Header toggleTheme={function (): void {
+          throw new Error("Function not implemented.");
+        } } />
 
         <main className="bg-gray-50 dark:bg-gray-800 flex-1 overflow-y-auto mt-16 p-8 space-y-6">
           <div className="grid grid-cols-3 gap-6">

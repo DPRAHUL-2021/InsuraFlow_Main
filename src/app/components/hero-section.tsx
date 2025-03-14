@@ -134,7 +134,7 @@ export function HeroSection() {
           >
             <Link href="/login">
               <Button
-                variant="gradient"
+                variant="default"
                 size="lg" // Increased size
                 className="bg-blue-600 text-white hover:bg-blue-700 rounded-lg px-8 py-3 text-base font-medium transition-all duration-300 ease-in-out shadow-lg"
               >
