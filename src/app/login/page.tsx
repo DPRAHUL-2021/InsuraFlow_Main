@@ -110,8 +110,8 @@ const Login: React.FC = () => {
 
           {/* Signup Redirect - Centered */}
           <div className="text-lg text-gray-600 mt-6 text-center">
-            Don't have an account?{" "}
-            <Link href="/signup" className="text-blue-500 hover:underline">
+          <p>Don&apos;t forget to sign up!</p>
+          <Link href="/signup" className="text-blue-500 hover:underline">
               Sign Up
             </Link>
           </div>

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import FileUpload from "./FileUpload";
-import AIResponse from "./AIResponse";
+// import AIResponse from "./AIResponse"; // Ensure that AIResponse.tsx exists in the same directory
 import StatusBadge from "./StatusBadge";
 
 const ClaimForm = () => {
@@ -64,7 +64,7 @@ const ClaimForm = () => {
       </form>
       {aiAssessment && (
         <div className="mt-4">
-          <AIResponse assessment={aiAssessment} />
+          {/* <AIResponse assessment={aiAssessment} /> */}
           <StatusBadge status={aiAssessment?.status} /> 
         </div>
       )}

@@ -21,8 +21,8 @@ export function CTASection() {
           <div className="flex justify-center">
             <Link href="/get-started"> {/* Link to respective page */}
               <Button
-                variant="gradient"
-                size="xl"
+                variant="default"
+                size="lg"
                 className="bg-black text-white py-4 px-6 rounded-full shadow-xl flex items-center justify-center"
               >
                 Get Started Today

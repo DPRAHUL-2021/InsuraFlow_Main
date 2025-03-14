@@ -36,8 +36,12 @@ const Signup: React.FC = () => {
       const data = await response.json();
 
       if (!response.ok) {
+        interface ApiError {
+          msg: string;
+        }
+        
         const errorMessage = Array.isArray(data.detail)
-          ? data.detail.map((err: any) => err.msg).join(", ")
+          ? data.detail.map((err: ApiError) => err.msg).join(", ")
           : "Failed to sign up";
         setError(errorMessage);
         return;

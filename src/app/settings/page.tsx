@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
-import { FaUser, FaEnvelope, FaLock, FaBell, FaMoon, FaSun, FaKey, FaShieldAlt } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaLock, FaBell, FaMoon, FaSun, FaShieldAlt } from "react-icons/fa";
 
 const Settings = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,7 +17,7 @@ const Settings = () => {
     <div className="flex h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
       <Sidebar />
       <div className="flex flex-col flex-1 ml-64">
-        <Header />
+        <Header toggleTheme={() => setDarkMode(!darkMode)} />
 
         <main className="bg-gray-50 dark:bg-gray-800 flex-1 overflow-y-auto mt-16 p-8 space-y-6">
           <motion.div
